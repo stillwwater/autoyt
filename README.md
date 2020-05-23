@@ -6,6 +6,8 @@ A CLI tool for automating the editing and uploading process of YouTube music vid
 go get github.com/stillwwater/autoyt
 ```
 
+For pre-built binaries see [Releases](https://github.com/stillwwater/autoyt/releases).
+
 ##  Usage
 
 ```bash
@@ -14,14 +16,16 @@ go get github.com/stillwwater/autoyt
 autoyt add music "ohwell - blue by you.mp3"
 autoyt add art -a snatti89 "https://i.imgur.com/jJkRk1u.jpg"
 
-# preview video description, the desc command lets you change any information on videos before they are scheduled
+# preview video description, the desc command lets you change any information
+# on videos before they are scheduled
 autoyt desc
 
 # encode videos using ffmpeg and schedule an upload time
 # images and music will be picked from the buffer
 autoyt schedule
 
-# upload scheduled videos to youtube. Videos will be private at first and made public at the scheduled date (this is handled by YouTube)
+# upload scheduled videos to youtube. Videos will be private at first and made
+# public at the scheduled date (this is handled by YouTube)
 autoyt upload
 ```
 
